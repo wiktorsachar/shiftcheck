@@ -1,0 +1,104 @@
+.myButton {
+  box-shadow: inset 0px 0px 14px -3px #f2fadc;
+  background-color: #dbe6c4;
+  border-radius: 6px;
+  border: 1px solid #b2b8ad;
+  display: inline-block;
+  cursor: pointer;
+  color: #757d6f;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ced9bf;
+}
+.myButton:hover {
+  background-color: #9ba892;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #9ba892;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#date-button {
+  text-align: center;
+  margin-top: 10px;
+}
+#date-picker {
+  margin-right: 10px;
+}
+#input{
+  display: flex;
+  justify-content: space-between;
+}
+#button-container {
+  text-align: center;
+}
+#output {
+  text-align: center;
+}
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+  font-family: Arial;
+  color: #757d6f
+}
+h2 {
+  text-align: center;
+}
