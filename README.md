@@ -4,4 +4,4 @@ Just select date and check what shift has it's duty day. Output is a number of w
 
 Try it on:
 
-wiktorsachar.github.io/shiftcheck
+http://wiktorsachar.github.io/shiftcheck
