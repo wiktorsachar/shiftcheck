@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <head>
   <title>Sprawdź swoją zmianę</title>
-  <meta name="author" content="Wiktor Sacharczuk">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
   <script src="shifts.js"></script>
-
-  <div class="content">
-    <h2>Sprawdź zmianę</h2>
-
-    <div id="input">
-      <input class="myButton" type="date" id="date-picker" />
-      <div id="buttons">
-        <input type="radio" name="day-or-night" value="day" id="day" checked />
-        <label for="day">Dzień &nbsp;</label>
-        <input type="radio" name="day-or-night" value="night" id="night" />
-        <label for="night">Noc &nbsp;</label>
+  <div id="wrapper">
+    <div class="content">
+      <h2 id="header">Sprawdź zmianę</h2>
+      <div id="input">
+        <input class="myButton" type="date" id="date-picker" />
+        <div id="buttons">
+          <input
+            type="radio"
+            name="day-or-night"
+            value="day"
+            id="day"
+            checked
+          />
+          <label for="day">Dzień &nbsp;</label>
+          <input type="radio" name="day-or-night" value="night" id="night" />
+          <label for="night">Noc</label>
+        </div>
       </div>
+      <div id="button-container">
+        <button
+          class="myButton"
+          id="date-button"
+          onclick="onClick()"
+          onfocus="blur('date-button')"
+        >
+          Oblicz
+        </button>
+      </div>
+      <h2 id="output">.</h2>
     </div>
-    <div id="button-container">
-      <button
-        class="myButton"
-        id="date-button"
-        onclick="onClick()"
-        onfocus="blur('date-button')"
-      >
-        Oblicz
-      </button>
-    </div>
-    <h1 id="output"></h1>
   </div>
 </body>

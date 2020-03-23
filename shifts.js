@@ -59,6 +59,7 @@ function onClick() {
     night = checkIfNightChecked(),
     shift = Shifts.getShiftNumber(date, night);
   setOutput(shift);
+  document.getElementById("output").style.visibility = "visible";
 }
 function blur(id) {
   document.getElementById(id).blur();
